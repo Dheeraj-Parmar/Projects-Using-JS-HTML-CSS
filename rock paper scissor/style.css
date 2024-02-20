@@ -1,0 +1,108 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #191919;
+    color: white;
+}
+
+div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.topic {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+
+h1 {
+    max-width: fit-content;
+    overflow: hidden;
+    border-right: 6px solid dodgerblue;
+    border-left: 6px solid dodgerblue;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 5s steps(40,end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+        background-color: rgb(247, 104, 255);
+    }
+    50% {
+        border-color: dodgerblue;
+    }
+
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+button{
+    height: 100px;
+    width: 100px;
+    border-color: white;
+    background-color: #191919;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 5px;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+} 
+
+img {
+    height: 75px;
+    width: 75px;
+    background-size: cover;
+}
+
+.js-result {
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.js-moves {
+    font-size: 30px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.js-score {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

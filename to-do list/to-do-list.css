@@ -1,0 +1,42 @@
+body {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.output, .heading {
+    display: grid;
+    grid-template-columns: 200px 150px 100px;
+    gap: 10px;
+    align-items: center;
+}
+
+.heading {
+    margin-bottom: 25px;
+    align-items: stretch;
+}
+
+.input {
+    height: 40px;
+    text-align: center;
+}
+
+.date {
+    text-align: center;
+}
+
+.addbutton {
+    background-color: rgb(108, 214, 108);
+}
+
+
+.remove {
+    background-color: red;
+    height: 40px;
+}
+
+.allign {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
